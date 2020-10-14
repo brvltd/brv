@@ -327,6 +327,14 @@ body{
   cursor: progress;
 }
 
+#links{
+  margin-top: 20%; 
+  background-color: white; 
+  opacity: 0.9; 
+  width: auto;
+  height: 46vh;
+}
+
 @media screen and (max-width: 600px) {
   .topnav{
     overflow: hidden;
@@ -354,6 +362,13 @@ body{
   border-bottom: solid 5px #181147;
   font-weight: bold;
   color: black;
+}
+
+#links{
+  background-color: white; 
+  opacity: 0.9; 
+  width: auto;
+  height: auto;
 }
 }
 
