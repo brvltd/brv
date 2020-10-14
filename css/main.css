@@ -333,11 +333,16 @@ body{
     float: right;
     display: block;
   }
-
-  .homePage{
-  width: auto;
-  height: 100%;
-  margin-left: 10%;
+  .sticky {
+  position: fixed;
+  top: 0;
+  width: 80%;
+  background-color:#00aeef ;
+  margin-left: 20px;
+  transition: .5s ease;
+  border-bottom: solid 5px #181147;
+  font-weight: bold;
+  color: white;
 }
 }
 
@@ -345,7 +350,7 @@ body{
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
-    right: 0;
+    right: 10;
     top: 0;
   }
   .topnav.responsive a {
@@ -356,6 +361,18 @@ body{
    .homePage{
   width: auto;
   height: 100%;
-  margin-left: 10%;
+  margin-left: 0%;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 90%;
+  background-color:#00aeef ;
+  margin-left: 20px;
+  transition: .5s ease;
+  border-bottom: solid 5px #181147;
+  font-weight: bold;
+  color: black;
 }
 }
