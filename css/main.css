@@ -35,8 +35,8 @@ body{
 	background-image: url(../images/tango-tsuttie-jNAOZHNsxHo-unsplash.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: auto;
-  height: 100vh;
+	width: fit-content;
+  height: auto;
 }
 
 .row_margin{
@@ -333,6 +333,12 @@ body{
     float: right;
     display: block;
   }
+
+  .homePage{
+  width: auto;
+  height: 100%;
+  margin-left: 10%;
+}
 }
 
 @media screen and (max-width: 600px) {
@@ -347,3 +353,9 @@ body{
     display: block;
     text-align: left;
   }
+   .homePage{
+  width: auto;
+  height: 100%;
+  margin-left: 10%;
+}
+}
