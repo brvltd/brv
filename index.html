@@ -2,9 +2,9 @@
 <html>
 <head>
 	<title>BRV_LOGISTICS</title>
-	 <meta charset="utf-8">
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="icon" type="image/x-icon" href="images/icon/favicon.ico">
@@ -99,10 +99,10 @@
 		<br>
 		<br>
 
-		<section>
+		<section id="section">
 			<!-- first row -->
 			<div class="row">
-				<div class="col-md-4" style="margin-left: 15%;">
+				<div class="col-md-4" id="sty1">
 					<div class="row" id="showToggle">
 						<img src="images/first.png" id="view">
 						<div id="overlay">
@@ -122,7 +122,7 @@
 					</div>
 				</div>
 
-				<div class="col-md-4" style="margin-left: 10%;">
+				<div class="col-md-4" id="sty2">
 					<div class="row" id="showToggle1">
 						<img src="images/second.png" id="view1">
 						<div id="overlay1">
@@ -143,7 +143,7 @@
 
 			<!-- second row -->
 			<div class="row">
-				<div class="col-md-4" style="margin-left: 15%;">
+				<div class="col-md-4" id="sty1">
 					<div class="row" id="showToggle2">
 						<img src="images/third.png" id="view2">
 						<div id="overlay2">
@@ -163,7 +163,7 @@
 					</div>
 				</div>
 
-				<div class="col-md-4" style="margin-left: 10%;">
+				<div class="col-md-4" id="sty2">
 					<div  class="row" id="showToggle3">
 						<img src="images/fourth.png" id="view3">
 						<div id="overlay3">
@@ -284,29 +284,30 @@
 	<br>
 
 	<div class="container-fluid container_style_2">
-		<div style="margin-left: 10%;">
-			<hr>
-			<h5 style="margin-top: 5%;">
-				<strong>
-					NEWSLETTER SUBSCRIBE
-				</strong>
-			</h5>
+		<div id="footer">
+			<div style="margin-left: 10%;">
+				<hr>
+				<h5 style="margin-top: 5%;">
+					<strong>
+						NEWSLETTER SUBSCRIBE
+					</strong>
+				</h5>
 
-			<p style="font-size: 12px;">
-				Subscribe to our newsletter and we will inform you about newest projects and promotions.
-			</p>
+				<p style="font-size: 12px;">
+					Subscribe to our newsletter and we will inform you about newest projects and promotions.
+				</p>
 
-			<form method="post" action="subscribe.php">
-				<input id="email" class="Email" type="Email" placeholder="Email" name="Email">
-				<button id="btn" type="submit" class="btn-success"><strong>Submit</strong></button>
-			</form>
+				<form method="post" action="subscribe.php">
+					<input id="email" class="Email" type="Email" placeholder="Email" name="Email">
+					<button id="btn" type="submit" class="btn-success"><strong>Submit</strong></button>
+				</form>
+			</div>
 
 			<div id="links" class="row" style="">
 				<div class="col-md-3">
 					<br>
 					<h6>QUICK LINKS</h6>
 					<span style="font-size: 11px">
-						About Us<br>
 						Company history<br>
 						Company events<br>
 						Supply chain management<br>
@@ -320,15 +321,32 @@
 					<br>
 					<h6>INDUSTRY SOLUTIONS</h6>
 					<span style="font-size: 11px">
-						Overland transportation <br>
+						<a onclick="pop()">Overland transportation </a>
+						<br>
 						Air freight<br>
 						Ocean freight<br>
 						Large projects<br>
-						Rail internation shipping<br>
 						Contract logistics<br>
 						Packaging options
 
 					</span>
+
+					<span class="popuptext" id="myPopup">
+						<img src="images/16-9-pair-next-gen-trucks.jpg" style="width: 100%;">
+						Overland transportation
+						We offers a safe, economical and viable national transportation means for your goods in Kenya and across Eat Africa
+						Full loads, part loads and group age Overland freight is an affordable shipping method for transporting your goods domestically throughout Kenya and across East Africa. Whether your ground transport needs are a single shipment, a few pallets or multiple full loads every week, BRV_LOGISTICS values and knows how to handle your cargo. 
+						Benefits
+						Overland transportation is designed to deliver the goods on time across East Africa. With ease you can track your goods during the transportation ensuring flexibility and reliability.
+						Providing high quality transportation services to all of our clients
+						Invest in our employees to provide better service and company growth
+						Worry about environment according to latest industry standards
+						Safety as top priority in assuring safe work procedures
+						Investing in technology to provide fast, accurate and cost-effective service
+						Living up to highest industry standards
+
+					</span>
+
 					<br>
 				</div>	
 				<div class="col-md-5" id="contacts">
@@ -356,5 +374,12 @@
 	<script src="Js/toogle_jquery.js" charset="utf-8"></script>
 	<script src="Js/subscriber.js" charset="utf-8"></script>
 	<script src="Js/scroll.js" charset="utf-8"></script>
+	<script>
+// When the user clicks on div, open the popup
+function pop() {
+	var popup = document.getElementById("myPopup");
+	popup.classList.toggle("show");
+}
+</script>
 </body>
 </html>

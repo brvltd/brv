@@ -78,7 +78,7 @@ body{
   position: fixed;
   bottom: 20px;
   right: 80px;
-  z-index: 99;
+  z-index: 999;
   font-size: 18px;
   border: none;
   outline: none;
@@ -335,34 +335,91 @@ body{
   height: 46vh;
 }
 
+#sty1{
+  margin-left: 15%;
+}
+
+#sty2{
+  margin-left: 10%;
+}
+
+#footer a{
+  text-decoration: none; 
+  color: black;
+}
+
+/* The actual popup */
+.popuptext {
+  visibility: hidden;
+  width: 90%;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  margin-left: -120px;
+}
+
+/* Popup arrow */
+.popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
 @media screen and (max-width: 600px) {
   .topnav{
     overflow: hidden;
-  height: 80px;
-  background-color: #00aeef;
-  position: fixed;
-  width: 80%;
-  margin-left: 20px;
-  transition: .5s ease;
-  z-index: 999;
-  font-weight: bold;
-  }
+    height: 80px;
+    background-color: #00aeef;
+    position: fixed;
+    width: 80%;
+    margin-left: 20px;
+    transition: .5s ease;
+    z-index: 999;
+    font-weight: bold;
+    }
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
   }
   .sticky {
-  position: fixed;
-  top: 0;
-  width: 80%;
-  background-color:#00aeef ;
-  margin-left: 20px;
-  transition: .5s ease;
-  border-bottom: solid 5px #181147;
-  font-weight: bold;
-  color: black;
-}
+      position: fixed;
+      top: 0;
+      width: 80%;
+      background-color:#00aeef ;
+      margin-left: 20px;
+      transition: .5s ease;
+      border-bottom: solid 5px #181147;
+      font-weight: bold;
+      color: black;
+    }
 
 #links{
   background-color: white; 
@@ -370,19 +427,39 @@ body{
   width: auto;
   height: auto;
 }
+
+#sty1{
+  margin-left: 15%;
+}
+
+#sty2{
+  margin-left: 10%;
+}
+#section{
+  height: auto;
+}
+
+.homePage{
+  width: 80%;
+  height: 100%;
+  margin-left: 0%;
+}
+.row_margin{
+  text-align: center;
+}
 }
 
 @media screen and (max-width: 600px) {
   .topnav.responsive {
     position: fixed;
     background-color:#00aeef; 
-   width: 90%;
-  height: auto;
-  margin-left: 20px;
-transition: .5s ease;
-  border-bottom: solid 5px #181147;
-  font-weight: bold;
-  color: black;}
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+    transition: .5s ease;
+    border-bottom: solid 5px #181147;
+    font-weight: bold;
+    color: black;}
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
@@ -396,10 +473,10 @@ transition: .5s ease;
     color: white;
   }
    .homePage{
-  width: auto;
-  height: 100%;
-  margin-left: 0%;
-}
+    width: auto;
+    height: 100%;
+    margin-left: 0%;
+  }
 
 .sticky {
   position: fixed;
@@ -423,5 +500,21 @@ transition: .5s ease;
 .fifth_image{
 display: none;
 
+}
+
+#sty1{
+  margin-left: 10%;
+}
+
+#sty2{
+  margin-left: 10%;
+}
+
+#section{
+  height: auto;
+}
+.row_margin{
+  text-align: center;
+  left: 0;
 }
 }
