@@ -466,7 +466,7 @@ body{
   .topnav{
     overflow: hidden;
     height: 80px;
-    background-color: #00aeef;
+    background-color: transparent;
     position: fixed;
     width: 80%;
     margin-left: 20px;
