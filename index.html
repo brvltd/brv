@@ -27,6 +27,7 @@
 				<a id="nav" href="#" class="active">Home</a>
 				<a id="nav" href="#services">| Services</a>
 				<a id="nav" href="#about">| About</a>
+				<a id="nav" href="#tracking">| Tracking</a>
 				<a id="nav" href="#contacts">| Contacts</a>
 				<a href="javascript:void(0);" class="icon" onclick="float()">
 					<i class="fa fa-bars"></i>
@@ -202,7 +203,7 @@
 	</section>
 
 	<br>
-
+	<!-- About us -->
 	<div class="container-fluid container_style_1" id="about">
 		<div class="row">
 			<div class="col-md-6" style="background-color: #181147">
@@ -234,6 +235,59 @@
 
 	<br>
 
+	<!-- Tracking -->
+
+	<div class="container-fluid container_style_1" id="tracking">
+		<div class="row">
+			<div class="col-md-6" style="background-color: #FFFFFF">
+				<br>
+				<br>
+				<h1 id="track_label"> <img id="truck1" src="images/truck_1.png"> <strong>TRACK YOUR SHIPMENTS</strong></h1>
+				<hr>
+				<br>
+				<div class="form-inline" style="margin-left: 5%;">
+					<div class="form-group">
+						<label for="track_no" id="label"> <strong>Track No:</strong> </label>
+						<input style="margin-left: 10px; margin-right: 10px;" type="text" class="form-control" id="track_no" placeholder="Enter Track No" name="track_no">
+					</div>
+					<button type="Submit" class="btn btn-success" onclick="getData()">Submit</button>
+
+					<img class ="fade_truck" src="images/Deliverytruck_1_1_1.png">
+				</div>
+				<br>
+				<hr>
+
+				<div class="jumbotron" id="visibility">
+					<center>
+						<h2>Details</h2>
+						<div id="divider"></div>
+					</center>
+
+					<table style="width:100%">
+						<tr>
+							<th>Track No</th>
+							<th>Customer Name</th>
+							<th>Cargo Name</th>
+						</tr>
+
+						<tr>
+							<td id="id"></td>
+							<td id="name"></td>
+							<td id="cargo"></td>
+						</tr>
+					</table>
+				</div>
+
+			</div>
+
+			<div class="col-md-6" id="sixth_image">
+
+			</div>
+		</div>
+	</div>
+
+	<br>
+	<!-- Contact -->
 	<div class="container-fluid container_style_2" id="contacts">
 		<div id="footer">
 			<div style="margin-left: 10%;">
@@ -329,5 +383,34 @@
 	<script src="Js/subscriber.js" charset="utf-8"></script>
 	<script src="Js/scroll.js" charset="utf-8"></script>
 	<script src="Js/loader.js" charset="utf-8"></script>
+	<script src="Js/loadData.js" charset="utf-8"></script>
+
+	<!-- firebase -->
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-database"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-storage"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+	https://firebase.google.com/docs/web/setup#available-libraries -->
+	<!-- <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-analytics.js"></script> -->
+
+	<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+  	apiKey: "AIzaSyCGOyXHMPcFwOllndBxs6htenmjeN0AP2U",
+  	authDomain: "brv-logistics-track.firebaseapp.com",
+  	databaseURL: "https://brv-logistics-track.firebaseio.com",
+  	projectId: "brv-logistics-track",
+  	storageBucket: "brv-logistics-track.appspot.com",
+  	messagingSenderId: "93398668914",
+  	appId: "1:93398668914:web:863719c2246dcd461994eb",
+  	// measurementId: "G-58GGLT2ZX1"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  // firebase.analytics();
+</script>
 </body>
 </html>

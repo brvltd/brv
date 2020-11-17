@@ -181,6 +181,13 @@ body{
   height: 100vh;
 }
 
+#sixth_image{
+  background-image: url(../images/traffic-3691618.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 100vh;
+}
 
 #view:hover{
   cursor: pointer;
@@ -673,6 +680,9 @@ body{
   transition: all 0.3s 0.1s ease-out;
 }
 
+#visibility{
+  display: none;
+}
 
 @media screen and (max-width: 600px) {
   .topnav.responsive {
@@ -816,6 +826,35 @@ body{
   cursor: pointer;
   text-transform: uppercase;
   display: block;
+}
+
+.fade_truck { 
+  margin-left: 0;
+  height: 35px;
+  width: 35px;
+}
+
+.btn{
+  margin-top: -15px;
+}
+
+#track_no{
+  margin-left: 0;
+  margin-right: 0;
+  width: 130%;
+}
+
+#label{
+  display: none;
+}
+#truck1{
+  height: 20%;
+  width: 20%;
+}
+
+#track_label{
+  margin-left: 10%;
+  font-size: 20px;
 }
 }
 
@@ -982,4 +1021,9 @@ body{
     margin-right:0;
     font-weight:600
   }
+}
+
+.fade_truck { 
+  margin-left: 40%;
+}
 }
