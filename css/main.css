@@ -189,6 +189,15 @@ body{
   height: 100vh;
 }
 
+#seventh_image{
+  background-image: url(../images/drahomir-posteby-mach-9Zb6mnHBH7E-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 100vh;
+
+}
+
 #view:hover{
   cursor: pointer;
   height: 100px;
@@ -537,6 +546,13 @@ body{
   .row_margin{
     text-align: center;
   }
+.fifth_image{
+  display: none;
+}
+  #sixth_image{
+
+ display: none;
+}
 }
 
 .entry-title{
@@ -740,10 +756,12 @@ body{
     height: auto;
   }
 
-  .fifth_image{
-    display: none;
-
-  }
+.fifth_image{
+  display: none;
+}
+.sixth_image{
+  display: none;
+}
 
   #sty1{
     margin-left: 10%;
@@ -855,6 +873,13 @@ body{
 #track_label{
   margin-left: 10%;
   font-size: 20px;
+}
+ #seventh_image{
+ display: none;
+}
+  #sixth_image{
+
+ display: none;
 }
 }
 
